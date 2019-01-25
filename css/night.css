@@ -1,0 +1,217 @@
+/*
+
+#00b8ff	(0,184,255)
+#009bd6	(0,155,214)
+#00719c	(0,113,156)
+#00415a	(0,65,90)
+#001f2b	(0,31,43)
+
+*/
+
+body {
+    font-family: 'roboto_condensedregular', sans-serif;
+    background-color: #373B44;
+    color: #ffffff;
+    margin: 0px;
+    letter-spacing: 1px;
+}
+
+#loader {
+    position: fixed;
+    z-index: 10000;
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 100%;
+}
+
+.loader_circle {
+    width: 30px;
+    height: 30px;
+    background: 100px;
+    border-radius: 100px;
+    border: 5px solid #ffffff;
+    display: block;
+    margin-right: 20px;
+    position: fixed;
+    opacity: 0.2;
+    top:50%;
+    left: 50%;
+    margin-left: -17px;
+    margin-top: -17px;
+}
+
+.loader_animation {
+    animation:loader_fade 2s infinite;
+    -moz-animation:loader_fade 2s infinite; /* Firefox */
+    -webkit-animation:loader_fade 2s infinite; /* Safari and Chrome */
+    -o-animation:loader_fade 2s infinite; /* Opera */
+    animation:loader_fade 2s infinite;
+}
+
+@keyframes loader_fade {
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@-moz-keyframes loader_fade { /* Firefox */
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@-webkit-keyframes loader_fade { /* Safari and Chrome */
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@-o-keyframes loader_fade { /* Opera */
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:0;}
+}
+
+/* ITRODUCTION STYLES */
+#intro {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    margin: auto;
+    background: url('../img/intro.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.up-button {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    max-width: 50px;
+    padding: 20px;
+    padding-bottom: 5px;
+}
+
+.title {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+h1 {
+    color: #00b8ff;
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: #373B44;
+}
+
+p {
+    color: #000000;
+}
+
+a, a:focus {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+#menu {
+    padding: 10px 0px;
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    max-width: 100%;
+    margin: 0px !important;
+}
+
+#menu ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: auto;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu a {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 40px;
+}
+
+.list-data {
+    text-align: left;
+    color: #9E9E9E;
+}
+
+section {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    max-width: 1140px;
+    background-color: #ffffff;
+    -webkit-box-shadow: -1px 4px 31px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 4px 31px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 4px 31px 0px rgba(0,0,0,0.75);
+}
+
+.column-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.column {
+    flex: 1;
+}
+
+video {
+    max-width: 80%;
+}
+
+@media (max-width: 1200px) {
+    section {
+        margin: 0px 15px;
+        width: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .column-wrapper {
+        display: block;
+    }
+
+    .column {
+        display: inline-block;
+    }
+
+    .column p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
