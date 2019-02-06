@@ -8,32 +8,7 @@
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <title>Restaurante</title>
     <link rel="stylesheet" href="fonts/styles.css">
-    <script>
-        <!--
-        function getStylesheet() {
-            var currentTime = new Date().getHours();
-            if (0 <= currentTime&&currentTime < 5) {
-                document.write("<link rel='stylesheet' href='css/night.css' type='text/css'>");
-            }
-            if (5 <= currentTime&&currentTime < 11) {
-                document.write("<link rel='stylesheet' href='css/main.css' type='text/css'>");
-            }
-            if (11 <= currentTime&&currentTime < 16) {
-                document.write("<link rel='stylesheet' href='css/main.css' type='text/css'>");
-            }
-            if (16 <= currentTime&&currentTime < 22) {
-                document.write("<link rel='stylesheet' href='css/main.css' type='text/css'>");
-            }
-            if (22 <= currentTime&&currentTime <= 24) {
-                document.write("<link rel='stylesheet' href='css/night.css' type='text/css'>");
-            }
-        }
-
-        getStylesheet();
-        -->
-    </script>
-
-    <noscript><link rel="stylesheet" href="css/main.css"></noscript>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div id="loader">
@@ -41,17 +16,40 @@
     </div>
 	<section id="menu">
 		<ul>
-			<li><a href="#">Nosotros</a></li>
-			<li><a href="#">Carta</a></li>
-			<li><a href="#">Contacto</a></li>
+			<li><a href="#description">Nosotros</a></li>
+			<li><a href="#carta">Carta</a></li>
+			<li><a href="#footer">Contacto</a></li>
 		</ul>
 	</section>
 	<div id="intro">
+            <img class="logo" src="img/logo.png">
 	</div>
-	<a href="#menu" class="up-button"><img src="img/menu-button.png"></a>
-	<section class="intro-wrapper">
-		<h1>Restaurante</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et consequat ex. Praesent rutrum suscipit erat lacinia accumsan. Nullam sed magna sed arcu sollicitudin gravida. Donec vehicula sapien a ligula placerat, at ornare odio congue. Nullam eget mauris rutrum, tincidunt justo eu, eleifend orci. Sed molestie purus non orci rutrum, a congue risus eleifend. Duis eu tortor lectus. Integer non mattis ligula, at mattis est. Maecenas eu ultrices augue, vel egestas dui. Vivamus pretium euismod lorem, vel pretium odio ultrices vel. Vivamus dignissim tellus eu tellus aliquam molestie.</p>
+	<a href="#intro" class="up-button"><img src="img/menu-button.png"></a>
+	<section class="intro-wrapper" id="description">
+        <h1>Nuestra Filosofía</h1>
+        <p>Cocina sincera con producto auténtico, armonizada<br>con un servicio familiar en plena naturaleza.</p>
+        <p>Así se conforma la exquisita tradición de nuestra casa.</p>
+		<p>El servicio cercano que intentamos ofrecer y nuestra particular atención por la excelencia en las materias primas, nos han llevado, probablemente, a ser considerados la mejor hamburguesería de Bilbao.</p>
+		<div id="carta" class="line">
+			<div class="img-column">
+				<img src="img/6.jpeg">
+				<img src="img/1.jpg">
+			</div>
+			<div class="img-column">
+				<img src="img/2.jpg">
+				<img src="img/4.jpeg">
+			</div>
+			<div class="img-column">
+				<img src="img/3.jpeg">
+				<img src="img/5.jpg">
+			</div>
+		</div>
+		<div id="footer">
+			<div class="wrapper">
+				<a href="#">grill@grillrestaurant.com</a>
+				<a href="#">944 444 333</a>
+			</div>
+		</div>
 	</section>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/main.js"></script>
